@@ -35,6 +35,6 @@ _Reference:_ http://flask.pocoo.org/docs/0.11/installation/#installation
 
 ## Using the endpoints
 1. Go to www.google.com/calendar, click the Settings gear icon, click Settings, and then find "Automatically add Google+ hangouts to events I create" and select "Yes" (http://www.riskcompletefailure.com/2012/11/programmatically-scheduling-hangouts.html)
-2. localhost:5000/login
+2. http://localhost:5000/login
 3. Complete authentication
-4. localhost:5000/get?n=100
+4. http://localhost:5000/get?n=100
