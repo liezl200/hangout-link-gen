@@ -4,12 +4,17 @@ import json
 import flask
 import httplib2
 
+from flask.ext.cors import CORS, cross_origin
+
 from apiclient import discovery
 from oauth2client import client
 
 app = flask.Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/get')
+@cross_origin()
 def getNLinks():
   if 'credentials' not in flask.session:
     return flask.redirect(flask.url_for('oauth2callback'))
